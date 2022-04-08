@@ -25,3 +25,7 @@
 -- | Ian        | Happ      |
 
 
+SELECT *
+    FROM teams INNER JOIN stats ON stats.team_id = teams.id AND 
+    INNER JOIN teams ON players.id = stats.player_id
+    ;
